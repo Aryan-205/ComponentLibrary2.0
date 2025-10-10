@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.corner-dot {
+  width: 8px;
+  height: 2px; 
+  background-color: #1d4ed8; 
+  border-radius: 9999px; 
+  transition: all 180ms ease-in-out; 
+}
+
+.corner-dot-v {
+  width: 2px;
+  height: 8px; 
+  background-color: #1d4ed8; 
+  border-radius: 9999px; 
+  transition: all 180ms ease-in-out; 
+}
+
+.group:hover .corner-dot {
+  background-color: #374151; 
+}
+
+.group:hover .corner-dot-v {
+  background-color: #374151; 
+}
+
+
+.group:hover .launch-dot-left-top,
+.group:hover .launch-dot-left-bottom {
+  left: -2px; 
+}
+
+.group:hover .launch-dot-right-top,
+.group:hover .launch-dot-right-bottom {
+  right: -2px; 
+}
+
+.group:hover .launch-dot-left-top-v,
+.group:hover .launch-dot-right-top-v {
+  top: -2px; 
+}
+
+.group:hover .launch-dot-left-bottom-v,
+.group:hover .launch-dot-right-bottom-v {
+  bottom: -2px; 
+}
+
+
+
+.corner-dot2 {
+  width: 8px;
+  height: 2px; 
+  background-color: rgb(38 38 38);; 
+  border-radius: 9999px; 
+  transition: all 180ms ease-in-out; 
+}
+
+.corner-dot-v2 {
+  width: 2px;
+  height: 8px; 
+  background-color: rgb(38 38 38);; 
+  border-radius: 9999px; 
+  transition: all 180ms ease-in-out; 
+}

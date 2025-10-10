@@ -1,4 +1,5 @@
 import ButtonPopup from "./components/ButtonPopup";
+import CornerButton from "./components/CornerButton";
 import LikeButton from "./components/LikeButton";
 import MicroInteraction from "./components/MicroInteraction";
 import QuestionPopup from "./components/QuestionPopup";
@@ -11,6 +12,7 @@ export default function App() {
       <QuestionPopup/>
       <LikeButton/>
       <MicroInteraction/>
+      <CornerButton/>
     </div>
   );
 }
