@@ -14,7 +14,7 @@ const MagnetTabs = ({ slug, options, onSelect, activeTab }: MagnetTabsProps) => 
   const [hovered, setHovered] = React.useState<string | undefined>(undefined);
 
   return (
-    <div className='w-full h-screen flex justify-center items-center'>
+    <div className='w-full h-full flex justify-center items-center border rounded-xl bg-white'>
       <div className="flex items-start justify-start">
         <ul className="flex border-[1px] border-black/10 shadow-md p-1 rounded-md">
           {options.map((option) => {

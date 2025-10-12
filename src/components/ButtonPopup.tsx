@@ -10,7 +10,7 @@ export default function ButtonPopup(){
 
   const [open, setOpen] = useState(false); 
   return (
-    <div className="h-screen w-full bg-white flex justify-center items-center">
+    <div className="h-full w-full bg-white flex justify-center items-center border rounded-xl">
         <AnimatePresence>
           
           <motion.div 

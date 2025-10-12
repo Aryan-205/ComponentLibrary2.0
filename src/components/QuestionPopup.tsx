@@ -10,7 +10,7 @@ export default function QuestionPopup(){
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="h-screen w-full bg-white border-y border-black flex justify-center items-center relative">
+    <div className="h-full w-full bg-white border  flex justify-center items-center relative rounded-xl">
       <AnimatePresence mode="popLayout">
         <motion.div
           animate={{
