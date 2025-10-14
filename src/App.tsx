@@ -8,6 +8,7 @@ import ModeSelector from "./components/ModeSelector";
 import QuestionPopup from "./components/QuestionPopup";
 import NavBar from "./components/NavBar";
 import AnimatedButton1 from "./components/AnimatedButton1";
+import SelectTab from "./components/SelectTab";
 
 export default function App() {
 
@@ -41,6 +42,7 @@ export default function App() {
       />
       <NavBar/>
       <AnimatedButton1/>
+      <SelectTab/>
     </div>
   );
 }
