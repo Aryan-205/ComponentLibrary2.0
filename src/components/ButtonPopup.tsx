@@ -12,7 +12,6 @@ export default function ButtonPopup(){
   return (
     <div className="h-full w-full bg-white flex justify-center items-center border rounded-xl">
         <AnimatePresence>
-          
           <motion.div 
             layout 
             layoutId="container"

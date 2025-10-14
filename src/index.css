@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .corner-dot {
   width: 8px;
   height: 2px; 
