@@ -9,6 +9,7 @@ import QuestionPopup from "./components/QuestionPopup";
 import NavBar from "./components/NavBar";
 import AnimatedButton1 from "./components/AnimatedButton1";
 import SelectTab from "./components/SelectTab";
+import Buttons1 from "./components/Buttons1";
 
 export default function App() {
 
@@ -43,6 +44,7 @@ export default function App() {
       <NavBar/>
       <AnimatedButton1/>
       <SelectTab/>
+      <Buttons1/>
     </div>
   );
 }
