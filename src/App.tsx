@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar";
 import AnimatedButton1 from "./components/AnimatedButton1";
 import SelectTab from "./components/SelectTab";
 import Buttons1 from "./components/Buttons1";
+import SideCarousel from "./components/SideCarousel";
 
 export default function App() {
 
@@ -45,6 +46,7 @@ export default function App() {
       <AnimatedButton1/>
       <SelectTab/>
       <Buttons1/>
+      <SideCarousel/>
     </div>
   );
 }
