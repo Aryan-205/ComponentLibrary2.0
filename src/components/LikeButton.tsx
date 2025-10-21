@@ -7,7 +7,7 @@ export default function LikeButton() {
 
   return (
     <>
-      <div className="w-full h-full bg-white relative flex justify-center items-center border rounded-xl">
+      <div className="w-full h-screen bg-white relative flex justify-center items-center border rounded-xl">
         <button
           onClick={() => setLike(p => p + 1)}
           style={{width: like > 0 ? "110px" : "90px"}}

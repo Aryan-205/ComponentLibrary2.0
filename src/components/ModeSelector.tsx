@@ -5,7 +5,7 @@ export default function ModeSelector() {
   const [isSystem, setIsSystem] = useState(true);
 
   return (
-    <div className="flex items-center justify-center h-full bg-white border rounded-xl">
+    <div className="flex items-center justify-center h-screen bg-white border rounded-xl">
       <div className="relative">
         {/* Toggle Container */}
         <div 

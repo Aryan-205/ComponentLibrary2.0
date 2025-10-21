@@ -5,7 +5,7 @@ import { LuArrowRight } from "react-icons/lu";
 export default function Buttons1(){
   return (
     <>
-    <div className="w-full h-full bg-white border rounded-xl grid grid-cols-2">
+    <div className="w-full h-screen bg-white border rounded-xl grid grid-cols-2">
       {/* 1 */}
       <div className="w-full h-full flex-center bg-gradient-to-t from-[#fbaa63] to-[#faeadb]">
         <button className="bg-black text-white px-4 py-2 rounded-full hover:shadow-[inset_0_0_8px_4px_rgba(255,255,255,0.5)]">Send Request</button>

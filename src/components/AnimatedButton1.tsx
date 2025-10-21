@@ -4,7 +4,7 @@ export default function AnimatedButton1() {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="flex items-center justify-center h-full w-full bg-white border rounded-xl">
+    <div className="flex items-center justify-center h-screen w-full bg-white border rounded-xl">
       <button
         onMouseEnter={()=>setHover(true)}
         onMouseLeave={()=>setHover(false)}

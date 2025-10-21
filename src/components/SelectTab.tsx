@@ -134,7 +134,7 @@ export default function SelectTab() {
   );
 
   return (
-    <div className="flex items-center justify-center h-full w-full bg-white border rounded-xl p-4 shadow-lg">
+    <div className="flex items-center justify-center h-screen w-full bg-white border rounded-xl p-4 shadow-lg">
       <div className="flex flex-col items-start justify-center">
         
         <MenuItem 

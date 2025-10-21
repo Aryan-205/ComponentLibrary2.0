@@ -6,17 +6,14 @@ const THEME_SLIDES = [
   {
     name: "Original Assault",
     color: "bg-[#274308]", // Dark Green/Black
-    accent: "text-[#90ED27]", // Neon Green
   },
   {
     name: "Rehab Red",
     color: "bg-[#611023]", // Dark Red/Maroon
-    accent: "text-[#FF4500]", // Orange/Red Accent
   },
   {
     name: "Ultra Zero",
     color: "bg-[#5b5b5b]", // Dark Gray
-    accent: "text-white", // White Accent
   },
 ];
 
@@ -75,9 +72,9 @@ export default function SideCarousel() {
   }, [currentIndex]);
   
   return (
-    <div className="h-full w-full flex flex-col justify-center items-center bg-black p-4 md:p-8 rounded-xl shadow-2xl shadow-green-900/50">
+    <div className="h-screen w-full flex flex-col justify-center items-center bg-white p-4 md:p-8 rounded-xl">
       
-      <h3 className={`text-3xl md:text-5xl font-extrabold uppercase mb-8 tracking-wider ${currentSlide.accent}`}>
+      <h3 className={`text-3xl md:text-5xl uppercase mb-8 text-black`}>
         {currentSlide.name}
       </h3>
 
@@ -109,13 +106,13 @@ export default function SideCarousel() {
                 className={`flex-shrink-0 cursor-pointer snap-center transition-all duration-500 transform ${scaleClass}`}
               >
                 <div 
-                  className={`${sizeClass} ${slide.color} rounded-2xl border-4 border-white/20 shadow-inner shadow-black/70 flex justify-center items-center text-center`}
+                  className={`${sizeClass} ${slide.color} rounded-2xl border-4 border-white/20 flex justify-center items-center text-center`}
                   style={{
                     // Explicit transitions for scale/size changes
                     transition: 'width 0.5s, height 0.5s, transform 0.5s'
                   }}
                 >
-                  <span className={`text-xl font-bold italic tracking-tighter transition-colors duration-500 ${slide.accent}`}>
+                  <span className={`text-xl italic transition-colors duration-500 text-white`}>
                     {slide.name}
                   </span>
                 </div>
@@ -128,14 +125,14 @@ export default function SideCarousel() {
         <button
           onClick={prevSlide}
           aria-label="Previous Theme"
-          className={`absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full border-2 transition-all duration-300 bg-gray-900/50 hover:bg-gray-800/80 border-[#90ED27] text-[#90ED27] shadow-[0_0_10px_rgba(144,237,39,0.5)] z-20 ${currentIndex === 0 ? 'opacity-30 pointer-events-none' : ''}`}
+          className={`absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full border-2 transition-all duration-300 bg-gray-900/50 hover:bg-gray-800/80 border-black text-black z-20 ${currentIndex === 0 ? 'opacity-30 pointer-events-none' : ''}`}
         >
           <ChevronIcon direction="left" />
         </button>
         <button
           onClick={nextSlide}
           aria-label="Next Theme"
-          className={`absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full border-2 transition-all duration-300 bg-gray-900/50 hover:bg-gray-800/80 border-[#90ED27] text-[#90ED27] shadow-[0_0_10px_rgba(144,237,39,0.5)] z-20 ${currentIndex === totalSlides - 1 ? 'opacity-30 pointer-events-none' : ''}`}
+          className={`absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full border-2 transition-all duration-300 bg-gray-900/50 hover:bg-gray-800/80 border-black text-black z-20 ${currentIndex === totalSlides - 1 ? 'opacity-30 pointer-events-none' : ''}`}
         >
           <ChevronIcon direction="right" />
         </button>
@@ -149,7 +146,7 @@ export default function SideCarousel() {
             key={index}
             className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
               index === currentIndex
-                ? "bg-[#90ED27] scale-125 shadow-[0_0_8px_rgba(144,237,39,1)]"
+                ? "bg-[#90ED27] scale-125"
                 : "bg-gray-700 hover:bg-gray-500"
             }`}
             onClick={() => setCurrentIndex(index)}

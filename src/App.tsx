@@ -17,7 +17,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('Tab 1');
 
   return (
-    <div className="w-full grid grid-cols-2 gap-4 p-4 bg-neutral-200 h-[300vh] relative">
+    <div className="w-full p-4 bg-neutral-200 relative">
       <div className="absolute w-full top-0 flex justify-center font-semibold text-lg z-10 bg-white py-2 border animate-pulse text-blue-800">Under Building</div>
       <ButtonPopup/>
       <QuestionPopup/>

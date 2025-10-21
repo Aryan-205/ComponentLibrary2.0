@@ -12,7 +12,7 @@ export default function MicroInteraction(){
 
   return (
     <>
-      <div className="w-full h-full bg-white flex justify-center items-center border rounded-xl">
+      <div className="w-full h-screen bg-white flex justify-center items-center border rounded-xl">
         <div className="flex justify-center items-center rounded-2xl border-2 border-neutral-200 p-2">
           <motion.div className="hover:bg-neutral-200 rounded-lg p-2">
             <motion.span>

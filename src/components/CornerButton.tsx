@@ -1,7 +1,7 @@
 export default function CornerButton(){
   return (
     <>
-    <div className="h-full w-full flex justify-center items-center bg-white gap-8 border rounded-xl">
+    <div className="h-screen w-full flex justify-center items-center bg-white gap-8 border rounded-xl">
       <button className="py-2 px-4 bg-blue-500 text-white hover:bg-neutral-800 hover:border-neutral-100 transition-colors duration-200 relative group">Launch
         <span className="absolute -top-[2px] -left-[8px] corner-dot launch-dot-left-top" />
         <span className="absolute -bottom-[2px] -left-[8px] corner-dot launch-dot-left-bottom" />
