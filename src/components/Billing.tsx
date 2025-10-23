@@ -106,13 +106,43 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
           ` 
         }
     >
-      <div className={`flex w-full gap-2 ${isOpen ? "flex-col" : "items-center"}`}>
+      <motion.div 
+        layout
+        animate={{
+          flexDirection: isOpen ? "column" : "row",
+          alignItems: isOpen ? "stretch" : "center"
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 30,
+          duration: 0.4
+        }}
+        className="flex w-full gap-2"
+      >
         {/* icon div */}
-        <div style={{width: isOpen ? "100%" : ""}} className='flex justify-between items-start'>
+        <motion.div 
+          layout
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 30,
+            duration: 0.4
+          }}
+          className='flex justify-between w-full relative items-start'
+        >
           
-          <motion.span layout className={`p-2 text-white bg-black transition-all duration-300 w-fit h-fit 
-            ${isOpen ? "rounded-xl" : "rounded-full"}`
-          }>
+          <motion.span 
+            layout
+            animate={{
+              borderRadius: isOpen ? "12px" : "50%",
+            }}
+            transition={{
+              duration: 0.35,
+              ease: "easeInOut"
+            }}
+            className="p-2 text-white bg-black w-fit h-fit"
+          >
             {icon}
           </motion.span>
           {
@@ -124,16 +154,26 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
               </button> 
             )
           }
-        </div>
+        </motion.div>
 
         {/* text div */}
-        <motion.div layout className='w-full flex justify-between items-center'>
+        {!isOpen && (
+          <motion.div 
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 30,
+            duration: 0.4
+          }}
+          className='w-full flex justify-between items-center'
+        >
           <div>
             <p className='font-medium text-black -mb-1'>{brand}</p>
             <p className='text-neutral-500 text-xs -mt-1'>{type}</p>
           </div>
           <p className='text-neutral-600 font-semibold'>-${price}</p>
         </motion.div>
+        )}
 
         {/* conditional elements */}
         {
@@ -144,6 +184,21 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
                 exit={{ opacity: 0 }}
                 className='text-xs text-neutral-500 w-full font-medium mt-2 space-y-2'
             >
+        <motion.div 
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 30,
+            duration: 0.4
+          }}
+          className='w-full flex justify-between items-center'
+        >
+          <div>
+            <p className='font-medium text-black -mb-1'>{brand}</p>
+            <p className='text-neutral-500 text-xs -mt-1'>{type}</p>
+          </div>
+          <p className='text-neutral-600 font-semibold'>-${price}</p>
+        </motion.div>
               <div className='border-y-2 border-dotted border-neutral-300 py-2 space-y-1'>
                 <div className='flex justify-between'><p>Transaction ID:</p><p className='text-black'>#54325</p></div>
                 <div className='flex justify-between'><p>Date:</p><p className='text-black'>September 10</p></div>
@@ -159,7 +214,7 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
             </motion.div>
           )
         }
-      </div>
+      </motion.div>
     </motion.div>
   )
 }
