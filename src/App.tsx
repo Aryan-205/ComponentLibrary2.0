@@ -10,15 +10,15 @@ import NavBar from "./components/NavBar";
 import AnimatedButton1 from "./components/AnimatedButton1";
 import SelectTab from "./components/SelectTab";
 import Buttons1 from "./components/Buttons1";
-import SideCarousel from "./components/SideCarousel";
 import NavBar2 from "./components/NavBar2";
+import Billing from "./components/Billing";
 
 export default function App() {
 
   const [activeTab, setActiveTab] = useState('Tab 1');
 
   return (
-    <div className="w-full p-4 bg-neutral-200 relative">
+    <div className="w-full p-4 bg-neutral-200 relative overflow-x-hidden">
       <div className="absolute w-full top-0 flex justify-center font-semibold text-lg z-10 bg-white py-2 border animate-pulse text-blue-800">Under Building</div>
       <ButtonPopup/>
       <QuestionPopup/>
@@ -47,8 +47,8 @@ export default function App() {
       <AnimatedButton1/>
       <SelectTab/>
       <Buttons1/>
-      <SideCarousel/>
       <NavBar2/>
+      <Billing/>
     </div>
   );
 }

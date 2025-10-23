@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .corner-dot {
   width: 8px;
