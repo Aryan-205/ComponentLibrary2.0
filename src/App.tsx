@@ -12,6 +12,7 @@ import SelectTab from "./components/SelectTab";
 import Buttons1 from "./components/Buttons1";
 import NavBar2 from "./components/NavBar2";
 import Billing from "./components/Billing";
+import PillStepper from "./components/PillStepper";
 
 export default function App() {
 
@@ -49,6 +50,7 @@ export default function App() {
       <Buttons1/>
       <NavBar2/>
       <Billing/>
+      <PillStepper/>
     </div>
   );
 }

@@ -48,8 +48,8 @@ export default function Billing() {
     <div className="h-screen w-full bg-neutral-100 rounded-xl border flex justify-center items-center">
       <motion.div layout className="rounded-3xl shadow-2xl bg-white text-base p-4 w-80 font-sans">
         {openId == null && <p className="text-neutral-500">Transactions</p>}
+        <AnimatePresence initial={false}>
         <div className={`w-full flex flex-col gap-2 ${openId == null ? "py-4" : "py-0"}`}>
-          <AnimatePresence initial={false}>
             {data.map(i=>(
               <CardTab 
                 id={i.id} 
@@ -62,8 +62,8 @@ export default function Billing() {
                 setOpenId={setOpenId}
               />
             ))}
-          </AnimatePresence>
         </div>
+        </AnimatePresence>
         {openId == null && 
           <button className="flex justify-center items-center bg-neutral-200 rounded-xl px-4 py-2 w-full gap-2 text-sm text-neutral-700 font-medium hover:bg-neutral-300 transition-colors">
             All Transactions 
@@ -99,10 +99,9 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
             transition: { duration: 0.3 }
         }}
         exit={{ opacity: 0 }}
-        layout
         onClick={()=>setOpenId(isOpen ? null : id)} 
         // Apply conditional classes
-        className={`w-full rounded-xl cursor-pointer overflow-hidden transition-all
+        className={`w-full h-full rounded-xl hover:bg-neutral-50 cursor-pointer transition-all
             ${isVisible ? 'block' : 'hidden'} 
           ` 
         }
@@ -110,6 +109,7 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
       <div className={`flex w-full gap-2 ${isOpen ? "flex-col" : "items-center"}`}>
         {/* icon div */}
         <div style={{width: isOpen ? "100%" : ""}} className='flex justify-between items-start'>
+          
           <motion.span layout className={`p-2 text-white bg-black transition-all duration-300 w-fit h-fit 
             ${isOpen ? "rounded-xl" : "rounded-full"}`
           }>
@@ -129,8 +129,8 @@ function CardTab({icon, brand, type, price, id, openId, setOpenId}:card){
         {/* text div */}
         <motion.div layout className='w-full flex justify-between items-center'>
           <div>
-            <p className='font-semibold text-black -mb-1'>{brand}</p>
-            <p className='text-neutral-500 text-sm -mt-1'>{type}</p>
+            <p className='font-medium text-black -mb-1'>{brand}</p>
+            <p className='text-neutral-500 text-xs -mt-1'>{type}</p>
           </div>
           <p className='text-neutral-600 font-semibold'>-${price}</p>
         </motion.div>
