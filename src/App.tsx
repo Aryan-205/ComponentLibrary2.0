@@ -13,6 +13,7 @@ import Buttons1 from "./components/Buttons1";
 import NavBar2 from "./components/NavBar2";
 import Billing from "./components/Billing";
 import PillStepper from "./components/PillStepper";
+import Radar from "./components/Radar";
 
 export default function App() {
 
@@ -51,6 +52,7 @@ export default function App() {
       <NavBar2/>
       <Billing/>
       <PillStepper/>
+      <Radar/>
     </div>
   );
 }
