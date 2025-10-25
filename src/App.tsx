@@ -14,6 +14,7 @@ import NavBar2 from "./components/NavBar2";
 import Billing from "./components/Billing";
 import PillStepper from "./components/PillStepper";
 import Radar from "./components/Radar";
+import Button3D1 from "./components/Button3D1";
 
 export default function App() {
 
@@ -53,6 +54,7 @@ export default function App() {
       <Billing/>
       <PillStepper/>
       <Radar/>
+      <Button3D1/>
     </div>
   );
 }
