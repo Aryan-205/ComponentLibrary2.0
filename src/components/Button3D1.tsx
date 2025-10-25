@@ -47,9 +47,9 @@ export default function Button3D1() {
         >
           {/* inner */}
           <div className="absolute w-full h-30 top-2 flex justify-center ">
-            <motion.div animate={{top: isOpen ? -28 : 0}} transition={{duration:0.4, type:"spring", stiffness:400, damping:10, mass:0.4}} className="h-20 w-40 bg-neutral-200 shadow-[inset_0_2px_4px_4px_rgba(255,255,255,1)] rounded-3xl absolute z-5"/>
-            <motion.div animate={{top: isOpen ? -12 : 0}} transition={{duration:0.4, type:"spring", stiffness:400, damping:10, mass:0.4}} className="h-20 w-56 bg-neutral-200 shadow-[inset_0_2px_4px_4px_rgba(255,255,255,1),0_2px_2px_2px_rgba(0,0,0,0.2)] rounded-3xl absolute z-10 text-gray-500 text-center">By</motion.div>
-            <motion.div animate={{top: isOpen ? 12 : 0}} transition={{duration:0.4, type:"spring", stiffness:400, damping:10, mass:0.4}} className="h-20 w-72 bg-neutral-200 shadow-[inset_0_2px_4px_4px_rgba(255,255,255,1),0_2px_2px_2px_rgba(0,0,0,0.2)] border-t border-white rounded-3xl absolute z-20 text-center text-gray-500 pt-2">Aryan Bola</motion.div>
+            <motion.div animate={{top: isOpen ? -32 : 0}} transition={{duration:0.4, type:"spring", stiffness:400, damping:10, mass:0.4}} className="h-20 w-40 bg-gradient-to-b from-neutral-200 to-white shadow-[inset_0_2px_4px_4px_rgba(255,255,255,1)] rounded-xl absolute z-5 text-gray-400 text-center">Designed</motion.div>
+            <motion.div animate={{top: isOpen ? -12 : 0}} transition={{duration:0.4,delay:0.05, type:"spring", stiffness:400, damping:10, mass:0.4}} className="h-20 w-56 bg-gradient-to-b from-neutral-200 to-white shadow-[inset_0_2px_4px_4px_rgba(255,255,255,1),0_2px_2px_2px_rgba(0,0,0,0.2)] rounded-2xl absolute z-10 text-gray-400 text-center">By</motion.div>
+            <motion.div animate={{top: isOpen ? 12 : 24}} transition={{duration:0.4,delay:0.1, type:"spring", stiffness:400, damping:10, mass:0.4}} className="h-40 w-72 bg-gradient-to-b from-neutral-200 to-white shadow-[inset_0_2px_4px_4px_rgba(255,255,255,1),0_2px_2px_2px_rgba(0,0,0,0.2)] border-t border-white rounded-2xl absolute z-20 text-center text-gray-400 pt-2">Aryan Bola</motion.div>
           </div>
 
 
@@ -72,7 +72,7 @@ export default function Button3D1() {
               rotateX: isOpen ? -35 : 0, // tilt forward
               scale: isOpen ? 1.1 : 1, // subtle scaling for realism
             }}
-            transition={{duration:0.3, ease:"easeIn",type:"spring", stiffness:200, damping:12, mass:0.6}}
+            transition={{duration:0.3, ease:"easeIn",type:"spring", stiffness:200, damping:8, mass:0.6}}
           >
             { isOpen && <div className="border-t border-neutral-600 w-full absolute top-2 h-72 rounded-2xl shadow-[0_-8px_8px_4px_rgba(210,210,255,0.1)]"/>}
             <IoFolderOpenOutline size={60} color="#DEB24C" />
