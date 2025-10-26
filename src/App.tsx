@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <div className="w-full p-4 bg-neutral-200 relative overflow-x-hidden">
-      <div className="absolute w-full top-0 flex justify-center font-semibold text-lg z-10 bg-white py-2 border animate-pulse text-blue-800">Under Building</div>
+      <div className="absolute w-full top-0 flex justify-center font-semibold text-lg z-10 bg-white py-2 border animate-pulse text-blue-800">Scroll down, Lanind page under construction</div>
       <ButtonPopup/>
       <QuestionPopup/>
       <LikeButton/>

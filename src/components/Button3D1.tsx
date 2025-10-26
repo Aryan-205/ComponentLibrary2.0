@@ -64,7 +64,7 @@ export default function Button3D1() {
                 `linear-gradient(180deg, #191D25 0%, #15181C 100%)`
               ].join(", "),
               boxShadow: isOpen
-                ? "inset 0 4px 12px 2px rgba(0,0,0,0.7)"
+                ? "inset 0 4px 4px 2px rgba(0,0,0,0.7)"
                 : "inset 0 0 2px 2px rgba(0,0,0,1)",
             }}
             animate={{
@@ -74,8 +74,8 @@ export default function Button3D1() {
             }}
             transition={{duration:0.3, ease:"easeIn",type:"spring", stiffness:200, damping:8, mass:0.6}}
           >
-            { isOpen && <div className="border-t border-neutral-600 w-full absolute top-2 h-72 rounded-2xl shadow-[0_-8px_8px_4px_rgba(210,210,255,0.1)]"/>}
-            <IoFolderOpenOutline size={60} color="#DEB24C" />
+            { isOpen && <div className="border-t border-neutral-600 w-full absolute top-2 h-72 rounded-2xl "/>}
+            <IoFolderOpenOutline size={60} color={isOpen ? "#DEB24C" :  "rgba(116,125,140)"} />
           </motion.div>
         </motion.div>
       </div>
