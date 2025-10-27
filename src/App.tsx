@@ -15,6 +15,7 @@ import Billing from "./components/Billing";
 import PillStepper from "./components/PillStepper";
 import Radar from "./components/Radar";
 import Button3D1 from "./components/Button3D1";
+import InteractiveBar from "./components/InteractiveBar";
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
 
   return (
     <div className="w-full p-4 bg-neutral-200 relative overflow-x-hidden">
-      <div className="absolute w-full top-0 flex justify-center font-semibold text-lg z-10 bg-white py-2 border animate-pulse text-blue-800">Scroll down, Lanind page under construction</div>
+      <div className="absolute w-full top-0 flex justify-center font-semibold text-lg z-10 bg-white py-2 border animate-pulse text-blue-800">Scroll down, Landing page under construction</div>
       <ButtonPopup/>
       <QuestionPopup/>
       <LikeButton/>
@@ -55,6 +56,7 @@ export default function App() {
       <PillStepper/>
       <Radar/>
       <Button3D1/>
+      <InteractiveBar/>
     </div>
   );
 }
