@@ -16,6 +16,7 @@ import PillStepper from "./components/PillStepper";
 import Radar from "./components/Radar";
 import Button3D1 from "./components/Button3D1";
 import InteractiveBar from "./components/InteractiveBar";
+import MicroInteractions2 from "./components/MicroInteractions2";
 
 export default function App() {
 
@@ -57,6 +58,7 @@ export default function App() {
       <Radar/>
       <Button3D1/>
       <InteractiveBar/>
+      <MicroInteractions2/>
     </div>
   );
 }
