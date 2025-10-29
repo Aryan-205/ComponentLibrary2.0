@@ -1,10 +1,10 @@
-import {motion} from 'motion/react'
+import { motion} from 'motion/react'
 
 export default function MicroInteractions2() {
   return (
     <div className="w-full h-screen flex-center gap-8 border bg-neutral-200">
-      <motion.button whileHover="hover" whileTap="tap" className="shadow-md bg-neutral-100 hover:bg-white text-gray-500 transition-colors flex-center gap-2 px-4 py-2"><Bin/> Delete</motion.button>
-      <button className="shadow-md bg-neutral-100 hover:bg-white text-gray-500 transition-colors flex-center gap-2 px-4 py-2">Call</button>
+      <motion.button whileHover="hover" className="shadow-md bg-neutral-100 hover:bg-white hover:scale-110 text-gray-500 transition-all flex-center gap-2 px-4 py-2"><Bin/> Delete</motion.button>
+      <motion.button whileHover="hover" className="shadow-md bg-neutral-100 hover:bg-white hover:scale-110 text-gray-500 transition-all flex-center gap-2 px-4 py-2"><File/>File</motion.button>
       <button className="shadow-md bg-neutral-100 hover:bg-white text-gray-500 transition-colors flex-center gap-2 px-4 py-2">Copy</button>
       <button className="shadow-md bg-neutral-100 hover:bg-white text-gray-500 transition-colors flex-center gap-2 px-4 py-2">Search</button>
     </div>
@@ -22,7 +22,7 @@ const Bin = () => (
   >
     <motion.path
       animate
-      variants={{hover:{scale:4},tap:{scale:2}}}
+      variants={{hover:{rotate:20,x:2,y:-2},tap:{scale:2}}}
       fill="#6b7280"
       fillRule="evenodd"
       d="M10.31 2.25h3.38c.217 0 .406 0 .584.028a2.25 2.25 0 0 1 1.64 1.183c.084.16.143.339.212.544l.111.335.03.085a1.25 1.25 0 0 0 1.233.825h3a.75.75 0 1 1 0 1.5h-17a.75.75 0 0 1 0-1.5h3.09a1.25 1.25 0 0 0 1.173-.91l.112-.335c.068-.205.127-.384.21-.544a2.25 2.25 0 0 1 1.641-1.183c.178-.028.367-.028.583-.028m-1.302 3a3 3 0 0 0 .175-.428l.1-.3c.091-.273.112-.328.133-.368a.75.75 0 0 1 .547-.395 3 3 0 0 1 .392-.009h3.29c.288 0 .348.002.392.01a.75.75 0 0 1 .547.394c.021.04.042.095.133.369l.1.3.039.112q.06.164.136.315z"
@@ -39,3 +39,19 @@ const Bin = () => (
   </motion.svg>
 );
 
+const File = () => (
+  <motion.svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="18"
+    fill="none"
+    viewBox="0 0 14 18"
+  >
+    <path
+      stroke="#6b7280"
+      d="M.5 15.5v-13a2 2 0 0 1 2-2h6.172a2 2 0 0 1 1.414.586l2.828 2.828a2 2 0 0 1 .586 1.414V15.5a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2Z"
+    ></path>
+    <motion.path animate variants={{hover:{y:10,x:-7,scale:0.8}}} stroke="#6b7280" d="M8 .5v5a1 1 0 0 0 1 1h4"></motion.path>
+    <motion.path initial={{opacity:0,y:-4,x:4, scale:2}} animate variants={{hover:{opacity:1,y:0,x:0, scale:1}}} stroke="#6b7280" d="M8 .5v5a1 1 0 0 0 1 1h4"></motion.path>
+  </motion.svg>
+);

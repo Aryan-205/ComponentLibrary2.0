@@ -14,6 +14,8 @@
   align-items: center;
 }
 
+/* ----------------- */
+
 
 .corner-dot {
   width: 8px;
@@ -60,8 +62,6 @@
   bottom: -2px; 
 }
 
-
-
 .corner-dot2 {
   width: 8px;
   height: 2px; 
@@ -76,4 +76,15 @@
   background-color: rgb(38 38 38);; 
   border-radius: 9999px; 
   transition: all 180ms ease-in-out; 
+}
+
+/* ------------- */
+
+@keyframes slider {
+  from { translate:-100% }
+  to { translate: 0}
+}
+
+.animate-slide {
+  animation: slider 8s infinite linear;
 }

@@ -17,6 +17,7 @@ import Radar from "./components/Radar";
 import Button3D1 from "./components/Button3D1";
 import InteractiveBar from "./components/InteractiveBar";
 import MicroInteractions2 from "./components/MicroInteractions2";
+import SemioticCarousel from "./components/SemioticCarousel";
 
 export default function App() {
 
@@ -59,6 +60,7 @@ export default function App() {
       <Button3D1/>
       <InteractiveBar/>
       <MicroInteractions2/>
+      <SemioticCarousel/>
     </div>
   );
 }
