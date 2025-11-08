@@ -20,6 +20,7 @@ import MicroInteractions2 from "./components/MicroInteractions2";
 import SemioticCarousel from "./components/SemioticCarousel";
 import AnimatedButton2 from "./components/AnimatedButton2";
 import NavBar4 from "./components/NavBar4";
+import Card1 from "./components/Card1";
 
 export default function App() {
 
@@ -65,6 +66,7 @@ export default function App() {
       <SemioticCarousel/>
       <AnimatedButton2/>
       <NavBar4/>
+      <Card1/>
     </div>
   );
 }
