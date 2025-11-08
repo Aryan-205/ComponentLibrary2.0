@@ -18,6 +18,8 @@ import Button3D1 from "./components/Button3D1";
 import InteractiveBar from "./components/InteractiveBar";
 import MicroInteractions2 from "./components/MicroInteractions2";
 import SemioticCarousel from "./components/SemioticCarousel";
+import AnimatedButton2 from "./components/AnimatedButton2";
+import NavBar4 from "./components/NavBar4";
 
 export default function App() {
 
@@ -61,6 +63,8 @@ export default function App() {
       <InteractiveBar/>
       <MicroInteractions2/>
       <SemioticCarousel/>
+      <AnimatedButton2/>
+      <NavBar4/>
     </div>
   );
 }
