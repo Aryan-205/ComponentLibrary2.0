@@ -1,6 +1,6 @@
 import { BsLightningCharge } from "react-icons/bs";
 import { FiClock, FiMap } from "react-icons/fi";
-import {hover, motion} from 'motion/react'
+import { motion} from 'motion/react'
 
 export default function Card1() {
   return (
