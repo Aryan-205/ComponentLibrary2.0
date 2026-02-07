@@ -1,0 +1,43 @@
+/* The container */
+.animated-btn {
+  display: grid; /* This stacks the children */
+  place-items: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5);
+}
+
+.animated-btn:hover {
+  transform: scale(0.95);
+  transition: transform 0.18s ease-in-out;
+}
+/* Common image styles */
+.animated-btn img {
+  grid-area: 1 / 1; /* Both images occupy the same grid cell */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: clip-path 0.3s ease-in-out;
+}
+
+/* Bottom layer: Grayscale and Inverted */
+.animated-btn img:first-of-type {
+  filter: grayscale(1);
+  z-index: 1;
+}
+
+/* Top layer: Hidden by default */
+.animated-btn img:last-of-type {
+  z-index: 2;
+  clip-path: circle(0% at 50% 50%);
+}
+
+/* Reveal on hover */
+.animated-btn:hover img:last-of-type {
+  clip-path: circle(100% at 50% 50%);
+}

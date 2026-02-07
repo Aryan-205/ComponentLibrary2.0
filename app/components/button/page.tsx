@@ -6,6 +6,7 @@ import Button3D1 from "@/app/component/Button3D1";
 import Button3 from "@/app/component/Button3";
 import Buttons1 from "@/app/component/Buttons1";
 import Buttons2 from "@/app/component/Buttons2";
+import AnimatedButton3 from "@/app/component/AnimatedButton3";
 
 export default function page() {
   return (
@@ -27,6 +28,9 @@ export default function page() {
       </div>
       <div className="flex justify-center items-center w-full h-screen">
         <Buttons2/>
+      </div>
+      <div className="flex justify-center items-center w-full h-screen">
+        <AnimatedButton3/>
       </div>
     </div>
   )
