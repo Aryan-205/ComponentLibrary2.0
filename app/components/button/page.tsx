@@ -9,6 +9,8 @@ import Buttons2 from "@/app/component/Buttons2";
 import AnimatedButton3 from "@/app/component/AnimatedButton3";
 import MapComponent from "@/app/component/MapComponent";
 import CopyText from "@/app/component/CopyText";
+import Accordian from "@/app/component/Accordian";
+import Loginform from "@/app/component/Loginform";
 
 export default function page() {
   return (
@@ -39,6 +41,10 @@ export default function page() {
         </div>
         <div className="flex justify-center items-center w-full h-screen">
           <CopyText />
+        </div>
+        <Accordian />
+        <div className="flex justify-center items-center w-full h-screen">
+          <Loginform />
         </div>
     </div>
   );
