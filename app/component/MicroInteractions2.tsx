@@ -2,7 +2,7 @@ import { motion} from 'motion/react'
 
 export default function MicroInteractions2() {
   return (
-    <div className="w-full h-screen flex-center gap-8 border bg-neutral-200">
+    <div className="w-full h-full flex justify-center items-center gap-8 border bg-neutral-200">
       <motion.button whileHover="hover" className="shadow-md bg-neutral-100 hover:bg-white hover:scale-110 text-gray-500 transition-all flex-center gap-2 px-4 py-2"><Bin/> Delete</motion.button>
       <motion.button whileHover="hover" className="shadow-md bg-neutral-100 hover:bg-white hover:scale-110 text-gray-500 transition-all flex-center gap-2 px-4 py-2"><File/>File</motion.button>
       <button className="shadow-md bg-neutral-100 hover:bg-white text-gray-500 transition-colors flex-center gap-2 px-4 py-2">Copy</button>

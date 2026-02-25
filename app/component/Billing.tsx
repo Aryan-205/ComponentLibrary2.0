@@ -45,7 +45,7 @@ export default function Billing() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <div className="h-screen w-full bg-neutral-100 rounded-xl border flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center bg-neutral-100 rounded-xl border">
       <motion.div layout className="rounded-3xl shadow-2xl bg-white text-base p-4 w-80 font-sans">
         {openId == null && <p className="text-neutral-500">Transactions</p>}
         <AnimatePresence initial={false}>

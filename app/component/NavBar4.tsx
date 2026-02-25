@@ -64,7 +64,7 @@ export default function NavBar4() {
   const [active, setActive] = useState("home");
 
   return (
-    <div className="flex-center h-screen w-full bg-neutral-100 rounded-xl border">
+    <div className="w-full h-full flex justify-center items-center bg-neutral-100 rounded-xl border">
       <div className="rounded-2xl shadow-md bg-white p-2">
         {/* Parent must be relative to anchor the absolute background */}
         <div className="rounded-full bg-black p-1 flex items-center gap-4 h-full relative">

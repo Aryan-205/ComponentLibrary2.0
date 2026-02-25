@@ -4,7 +4,7 @@ import { motion} from 'motion/react'
 
 export default function Card1() {
   return (
-    <div className="h-screen w-full flex-center rounded-xl bg-neutral-100 border gap-40">
+    <div className="w-full h-full flex justify-center items-center rounded-xl bg-neutral-100 border gap-40">
       <motion.div whileHover="hover" className="rounded-2xl shadow-lg border border-neutral-200 bg-white p-4 flex-center flex-col w-80 gap-4">
         <p className="text-6xl font-bold text-black text-wrap flex-center items-center">Mountain Hike</p>
         <div className="w-full relative py-12">

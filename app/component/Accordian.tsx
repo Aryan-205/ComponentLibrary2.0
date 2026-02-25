@@ -49,14 +49,14 @@ interface Item {
   content:string
 }
 
-const AccordionItem = ({ item, isOpen, onClick, selectedId }: { item: Item; isOpen: boolean; onClick: () => void; selectedId: number }) => {
-  console.log(selectedId);
+const AccordionItem = ({ item, isOpen, onClick, selectedId }: { item: Item; isOpen: boolean; onClick: () => void; selectedId: number | null }) => {
+  const id = selectedId ?? 0;
   return (
     <div 
       className={`border-gray-200 transition-all duration-300 bg-gray-50 
         ${isOpen ? "rounded-2xl my-2 border" : "border-x"}
-        ${selectedId + 1 === item.id ? "rounded-t-2xl border bg-blue-500" : "border-x"}
-        ${selectedId - 1 === item.id ? "rounded-b-2xl border bg-blue-500" : "border-x"}
+        ${id + 1 === item.id ? "rounded-t-2xl border bg-blue-500" : "border-x"}
+        ${id - 1 === item.id ? "rounded-b-2xl border bg-blue-500" : "border-x"}
         ${ item.id === 1 ? "rounded-t-2xl border bg-blue-500" : "border-x"}
         ${ item.id === 5 ? "rounded-b-2xl border bg-blue-500" : "border-x"}
       `}
@@ -99,9 +99,9 @@ const AccordionItem = ({ item, isOpen, onClick, selectedId }: { item: Item; isOp
 
 export type AccordianProps = {
   /** Controlled: which item is open (number = item id, null = none) */
-  openId?: number;
+  openId?: number | null;
   /** Controlled: called when an item is clicked with the new open id (or null to close) */
-  setOpenId?: (id: number) => void;
+  setOpenId?: (id: number | null) => void;
 };
 
 export default function Accordian({ openId: controlledOpenId, setOpenId: controlledSetOpenId }: AccordianProps = {}) {

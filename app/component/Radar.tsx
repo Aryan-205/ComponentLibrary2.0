@@ -2,7 +2,7 @@ import { motion } from 'motion/react'
 
 export default function Radar() {
   return (
-    <div className="h-screen w-full flex-center flex-col gap-4 bg-[#2C2C2C]">
+    <div className="w-full h-full flex justify-center items-center flex-col gap-4 bg-[#2C2C2C]">
       <div className="rounded-full bg-[#393B3C] h-80 w-80  flex-center relative overflow-hidden">
         <div className='h-2 w-2 bg-[#3AE483] absolute top-11 right-20 rounded-full animate-pulse'/>
         <div className='h-2 w-2 bg-[#3AE483] absolute top-21 right-24 rounded-full animate-pulse'/>

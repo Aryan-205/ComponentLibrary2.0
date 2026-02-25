@@ -2,7 +2,7 @@ import { motion } from 'motion/react'
 
 export default function MicroInteraction() {
   return (
-    <div className="w-full h-screen bg-neutral-100 flex-center rounded-xl border">
+    <div className="w-full h-full flex justify-center items-center bg-neutral-100 rounded-xl border">
       <div className="rounded-2xl p-2 flex gap-2 border-2 bg-white shadow-lg">
         <motion.button whileHover="hover" className="hover:bg-neutral-100 p-2 rounded-lg"><LeftArrow/></motion.button>
         <motion.button whileHover="hover" className="hover:bg-neutral-100 p-2 rounded-xl"><RightArrow/></motion.button>

@@ -1,6 +1,6 @@
 export default function Buttons2() {
   return (
-    <div className="h-screen w-full grid grid-cols-2 bg-white">
+    <div className="w-full h-full grid grid-cols-2 bg-white">
       <div className="w-full h-full bg-yellow-500">
         <button className="bg-red-500">Hello</button>
       </div>

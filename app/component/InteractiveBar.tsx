@@ -1,6 +1,6 @@
 export default function InteractiveBar() {
   return (
-    <div className="h-screen w-full flex-center">
+    <div className="w-full h-full flex justify-center items-center">
       <div className='w-[40%] h-[60%] border grid grid-cols-[repeat(25,minmax(0,1fr))] grid-rows-10 pl-8 cursor-crosshair'>
         {Array.from({ length: 250 }).map((_, index) => (
           <div key={index} 

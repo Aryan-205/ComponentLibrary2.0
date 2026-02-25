@@ -7,10 +7,10 @@ import { motion } from 'motion/react';
 export default function ProfileFlip() {
 
   const [isFlipped, setIsFlipped] = useState(false);
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   return (
-    <div className='h-screen w-full flex justify-center items-center bg-white text-black'>
+    <div className='w-full h-full flex justify-center items-center bg-white text-black'>
       <audio ref={audioRef} src="/flipsound.wav" preload="auto" hidden/>
       <div 
         style={{

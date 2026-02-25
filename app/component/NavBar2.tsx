@@ -7,7 +7,7 @@ export default function NavBar2() {
   const [selected, setSelected] = useState("home")
 
   return (
-    <div className="h-screen w-full bg-white rounded-xl border flex-center">
+    <div className="w-full h-full flex justify-center items-center bg-white rounded-xl border">
       <div className="flex-center gap-8 rounded-3xl bg-black p-2 px-8 overflow-hidden">
         {/* 1 */}
         <div className={`relative p-1 rounded-b-full transition-all duration-200 ease-in-out ${selected=="home" ? "bg-white -translate-y-3" : "bg-black"}`}>

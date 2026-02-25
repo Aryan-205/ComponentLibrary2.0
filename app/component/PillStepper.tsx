@@ -6,7 +6,7 @@ export default function PillStepper() {
   const total = 6;
 
   return (
-    <div className="h-screen w-full bg-neutral-100 flex-center rounded-xl border">
+    <div className="w-full h-full flex justify-center items-center bg-neutral-100 rounded-xl border">
       <div className="rounded-full w-40 h-12 border border-black overflow-hidden flex shadow-lg">
 
         <motion.button

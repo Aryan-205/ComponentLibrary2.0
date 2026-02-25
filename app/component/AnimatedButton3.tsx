@@ -4,7 +4,7 @@ import './animatedButton3.css'
 
 export default function AnimatedButton3() {
   return (
-    <div className="flex gap-8 justify-center items-center h-screen w-full">
+    <div className="w-full h-full flex gap-8 justify-center items-center">
       {[1, 2, 3].map((i) => (
         <button key={i} className="animated-btn rounded-4xl overflow-hidden">
           <Image 

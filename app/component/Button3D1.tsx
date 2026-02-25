@@ -22,7 +22,7 @@ export default function Button3D1() {
 
   return (
     <div
-      className="h-screen w-full flex items-center justify-center relative overflow-hidden"
+      className="w-full h-full flex justify-center items-center relative overflow-hidden"
       style={metallicBg}
     >
       {/* Container to hold folder + glow */}
